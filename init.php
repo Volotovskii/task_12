@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8" />
@@ -140,9 +140,14 @@
 
                     //Определение возрастно-полового состава
                     $mas = getGenderDescription($example_persons_array);
-                    echo "<td>" . round($mas[1], 1) . "</td>";
-                    echo "<td>" . round($mas[-1], 1) . "</td>";
-                    echo "<td>" . round($mas[0], 1) . "</td>";
+                    //Перенёс округления в функую 
+                    // echo "<td>" . round($mas[1], 1) . "</td>";
+                    // echo "<td>" . round($mas[-1], 1) . "</td>";
+                    // echo "<td>" . round($mas[0], 1) . "</td>";
+
+                    echo "<td>" . $mas[1] . "</td>";
+                    echo "<td>" . $mas[-1] . "</td>";
+                    echo "<td>" . $mas[0] . "</td>";
                     ?>
                 </tbody>
             </table>
